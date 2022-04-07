@@ -13,7 +13,12 @@ print(answer2)
 vars.quizTotal += answer2
 print("+++++++++++\n")
 
+answer3 = questions["q3"][input(questions["q3"]["question"])]
+print(answer3)
+
+vars.quizTotal += answer3
+print("+++++++++++\n")
+
 print("total so far: " + str(vars.quizTotal) + "\n")
 
-#after answer all the questions, figure out who your character is
 quizTally.total(vars.quizTotal)
