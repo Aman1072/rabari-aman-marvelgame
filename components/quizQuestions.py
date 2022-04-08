@@ -13,7 +13,19 @@ questions = {
 
     "q3" : {
         "question" : "you were dead in endgame?",
-        "y" : 0,
-        "n" : 10
+        "y" : 30,
+        "n" : 0
+    },
+
+    "q4" : {
+        "question" : "are you lived in ice for 70 years?",
+        "y" : 100,
+        "n" : 0
+    },
+
+    "q5" : {
+        "question" : "have you ever fought with big gound?",
+        "y" : 50,
+        "n" : 0
     }
 }
