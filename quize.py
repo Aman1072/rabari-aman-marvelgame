@@ -4,16 +4,6 @@ from components import vars, quizTally
 player_choice = False
 player_choice = True
 
-def play_again():
-
-    response = input ("play agian? (y/n)")
-    response = response.upper()
-
-    if response == "y":
-        return True
-    else:
-        return False    
-
 while player_choice is True:
 
     print("~~~~~~~~~~~~~~~~~~~~ WELCOME TO MARVEL GAME.~~~~~~~~~~~~~~~~~~~\n")
@@ -51,7 +41,16 @@ while player_choice is True:
     print("total so far: " + str(vars.quizTotal) + "\n")
     quizTally.total(vars.quizTotal)
 
-player_choice = True
+    print("Hey, would like try one more time and try get different character?")
+    choice = input("Yes/No? ")
+
+    if choice == "Y" or choice == "y":
+        choice == True
+
+    if choice == "N" or choice == "n":
+        print("you choose quite!! Because you did not got your fav. character.")
+        exit()    
+
 
 
 
