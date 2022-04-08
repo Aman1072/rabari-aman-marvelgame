@@ -1,35 +1,59 @@
 from components.quizQuestions import questions
 from components import vars, quizTally
 
-answer1 = questions["q1"][input(questions["q1"]["question"])]
-print(answer1)
+player_choice = False
+player_choice = True
 
-vars.quizTotal += answer1
-print("+++++++++++\n")
+def play_again():
 
-answer2 = questions["q2"][input(questions["q2"]["question"])]
-print(answer2)
+    response = input ("play agian? (y/n)")
+    response = response.upper()
 
-vars.quizTotal += answer2
-print("+++++++++++\n")
+    if response == "y":
+        return True
+    else:
+        return False    
 
-answer3 = questions["q3"][input(questions["q3"]["question"])]
-print(answer3)
+while player_choice is True:
 
-vars.quizTotal += answer3
-print("+++++++++++\n")
+    print("~~~~~~~~~~~~~~~~~~~~ WELCOME TO MARVEL GAME.~~~~~~~~~~~~~~~~~~~\n")
 
-answer4 = questions["q4"][input(questions["q4"]["question"])]
-print(answer4)
+    answer1 = questions["q1"][input(questions["q1"]["question"])]
+    print(answer1)
 
-vars.quizTotal += answer4
-print("+++++++++++\n")
+    vars.quizTotal += answer1
+    print("*****************************************************************\n")
 
-answer5 = questions["q5"][input(questions["q5"]["question"])]
-print(answer5)
+    answer2 = questions["q2"][input(questions["q2"]["question"])]
+    print(answer2)
 
-vars.quizTotal += answer5
-print("+++++++++++\n")
+    vars.quizTotal += answer2
+    print("******************************************************************\n")
 
-print("total so far: " + str(vars.quizTotal) + "\n")
-quizTally.total(vars.quizTotal)
+    answer3 = questions["q3"][input(questions["q3"]["question"])]
+    print(answer3)
+
+    vars.quizTotal += answer3
+    print("*******************************************************************\n")
+
+    answer4 = questions["q4"][input(questions["q4"]["question"])]
+    print(answer4)
+
+    vars.quizTotal += answer4
+    print("*******************************************************************\n")
+
+    answer5 = questions["q5"][input(questions["q5"]["question"])]
+    print(answer5)
+
+    vars.quizTotal += answer5
+    print("*******************************************************************\n")
+
+    print("total so far: " + str(vars.quizTotal) + "\n")
+    quizTally.total(vars.quizTotal)
+
+player_choice = True
+
+
+
+
+
